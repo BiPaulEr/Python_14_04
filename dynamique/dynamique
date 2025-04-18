@@ -1,0 +1,14 @@
+class MyClass:
+    def __init__(self):
+        self.attribute = 42
+    
+myclass  = MyClass()
+myclass.attribute
+
+quelestvotrenomattribut = input("Nom dattribut ")
+
+setattr(myclass, quelestvotrenomattribut, "C'est Dynamique")
+
+print(dir(myclass))
+
+print(getattr(myclass, quelestvotrenomattribut))
