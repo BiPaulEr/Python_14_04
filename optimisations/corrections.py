@@ -17,3 +17,7 @@ print(sum(notes_sup_17) / len(notes_sup_17)) #17.7
 
 etudiants_sup_17_com = [(etudiant, note / 5) for etudiant, note in etudiants if note >= (17 * 5)]
 print(etudiants_sup_17_com)
+
+
+etudiants_sup_17_com_gen =  ( (etudiant, note / 5) for etudiant, note in etudiants if note >= (17 * 5) )
+print(etudiants_sup_17_com_gen) #<generator object <genexpr> at 0x0000023795A30D60>
